@@ -6,4 +6,4 @@ O exercicío será realizar todos os processos até o capítulo 6.
 
 ## Capítulo 1
 
-Nesse capítulo é realizado toda a instalação e configuração do Rails. Também é feito um "hello, world", e 3 exercicíos que são uma variação dele.
+Nesse capítulo é realizado toda a instalação e configuração do Rails. Também é feito um "hello, world", e exercicíos que são uma variação dele.
