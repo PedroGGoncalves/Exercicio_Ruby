@@ -70,4 +70,4 @@ Resposta: Sim, existe
 
 ## Capítulo 3
 
-Nesse capítulo trabalhos com as páginas about, help e home da pasta static_pages
+Nesse capítulo trabalhos com as páginas about, help, contact e home da pasta static_pages, além dos testes
