@@ -16,7 +16,7 @@ Aqui é utilziado o rails generate, e com eles teremos nossas páginas que tem l
 Exercício:
 1. (For readers who know CSS) Create a new user, then use your browser’s HTML inspector to determine the CSS id for the text “User was successfully created.” What happens when you refresh your browser?
 
-Resposta: Antes de atualizat temos: ```<p style="color: green">User was successfully created.</p>```. Após atualizar temos:```<p style="color: green"></p>```
+Resposta: Antes de atualizar temos: ```<p style="color: green">User was successfully created.</p>```. Após atualizar temos:```<p style="color: green"></p>```
 
 2. What happens if you try to create a user with a name but no email address?
 
@@ -34,11 +34,37 @@ Resposta: Sim, ele exibe a mensagem: User was successfully destroyed.
 
 Resposta: ```<td><%= link_to 'Edit', edit_user_path(user) %></td>```
 
-2. Find the line in the scaffolding code that retrieves the user from the database in the previous exercise. Hint: It’s in a special location called set_-user.
+2. Find the line in the scaffolding code that retrieves the user from the database in the previous exercise. Hint: It’s in a special location called set_-user.
 
 Resposta: ```@user = User.find(params[:id])```
 
 3. What is the name of the view file for the user edit page?
 
 Resposta: edit.html.erb
+
+1. (For readers who know CSS) Create a new micropost, then use your browser’s HTML inspector to determine the CSS id for the text “Micropost was successfully created.” What happens when you refresh your browser?
+
+Resposta: Acontece a mesma ação que tinha no caso dos 'users'
+
+2.Try to create a micropost with empty content and no user id.
+
+Resposta: Aqui ele criou o micropost vazio.
+
+3. Try to create a micropost with over 140 characters of content (say, the first paragraph from the Wikipedia article on Ruby).
+
+Resposta: Ele criou normalmente.
+
+1.  Try to create a micropost with the same long content used in a previous exercise (Section 2.3.1). How has the behavior changed?
+
+Resposta: Ele mostrou um mensagem de erro e não criou.
+
+2.(For readers who know CSS) Use your browser’s HTML inspector to determine the CSS id of the error message produced by the previous exercise.
+
+Resposta: ```<div style="color: red">
+      <h2>1 error prohibited this micropost from being saved:</h2>
+      <ul>
+          <li>Content is too long (maximum is 140 characters)</li>
+      </ul>
+    </div>
+```
 
