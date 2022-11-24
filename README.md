@@ -33,3 +33,10 @@ Resposta: Sim, ele exibe a mensagem: User was successfully destroyed.
 1. By referring to Figure 2.11, write out the analogous steps for visiting the URL /users/1/edit.
 
 Resposta: ```<td><%= link_to 'Edit', edit_user_path(user) %></td>```
+
+2. Find the line in the scaffolding code that retrieves the user from the database in the previous exercise. Hint: It’s in a special location called set_-user.
+
+3. What is the name of the view file for the user edit page?
+
+Resposta: edit.html.erb
+
