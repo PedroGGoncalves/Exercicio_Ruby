@@ -67,3 +67,11 @@ Resposta: ```<div style="color: red">
       </ul>
     </div>```
 
+1. By examining the contents of the Application controller file, find the line that causes ApplicationController to inherit from ActionController::Base.
+
+Resposta: ```class ApplicationController < ActionController::Base```
+
+2. Is there an analogous file containing a line where ApplicationRecord inherits from ActiveRecord::Base? Hint: It would probably be a file
+called something like application_record.rb in the app/models directory.
+
+Resposta: Sim, existe
