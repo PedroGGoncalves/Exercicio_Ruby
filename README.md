@@ -15,7 +15,7 @@ Aqui é utilziado o rails generate, e com eles teremos nossas páginas que tem l
 
 Exercício:
 1. (For readers who know CSS) Create a new user, then use your browser’s HTML inspector to determine the CSS id for the text “User was successfully created.” What happens when you refresh your browser?
-Resposta: Antes de atualizat temos: <p style="color: green">User was successfully created.</p>, Após atualizar temos:<p style="color: green"></p>
+Resposta: Antes de atualizat temos: ```<p style="color: green">User was successfully created.</p>```. Após atualizar temos:```<p style="color: green"></p>```
 2. What happens if you try to create a user with a name but no email address?
 Resposta: Ele criou o usuário sem endereço de email.
 3. What happens if you try create a user with an invalid email address, like “@example.com”?
