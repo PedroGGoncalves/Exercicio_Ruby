@@ -3766,3 +3766,149 @@ Processing by StaticPagesController#about as HTML
 Completed 200 OK in 253ms (Views: 228.5ms | Allocations: 39038)
 
 
+Started GET "/static_pages/about" for ::1 at 2022-11-24 20:07:55 -0300
+  
+LoadError (cannot load such file -- test_helper):
+  
+app/controllers/static_pages_controller.rb:1:in `<main>'
+Started GET "/static_pages/help" for ::1 at 2022-11-24 20:08:12 -0300
+  
+LoadError (cannot load such file -- test_helper):
+  
+app/controllers/static_pages_controller.rb:1:in `<main>'
+Started GET "/static_pages/home" for ::1 at 2022-11-24 20:08:39 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 14817)
+Completed 200 OK in 87ms (Views: 79.5ms | Allocations: 15788)
+
+
+Started GET "/static_pages/help" for ::1 at 2022-11-24 20:08:54 -0300
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 2.0ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 3054)
+Completed 200 OK in 38ms (Views: 29.8ms | Allocations: 3899)
+
+
+Started GET "/static_pages/albout" for ::1 at 2022-11-24 20:09:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/albout"):
+  
+Started GET "/static_pages/about" for ::1 at 2022-11-24 20:09:20 -0300
+Processing by StaticPagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 1.7ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3033)
+Completed 200 OK in 37ms (Views: 29.0ms | Allocations: 3836)
+
+
+Started GET "/static_pages/home" for ::1 at 2022-11-24 20:11:02 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 187)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3116)
+Completed 200 OK in 37ms (Views: 29.4ms | Allocations: 3960)
+
+
+Started GET "/static_pages/help" for ::1 at 2022-11-24 20:11:37 -0300
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.2ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3088)
+Completed 200 OK in 37ms (Views: 29.6ms | Allocations: 3932)
+
+
+Started GET "/static_pages/about" for ::1 at 2022-11-24 20:11:40 -0300
+Processing by StaticPagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 1.6ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 2594)
+Completed 200 OK in 24ms (Views: 17.4ms | Allocations: 2937)
+
+
+Started GET "/static_pages/help" for ::1 at 2022-11-24 20:11:43 -0300
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 2460)
+Completed 200 OK in 22ms (Views: 16.0ms | Allocations: 2732)
+
+
+Started GET "/static_pages/help" for ::1 at 2022-11-24 20:11:59 -0300
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.4ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 3084)
+Completed 200 OK in 41ms (Views: 32.1ms | Allocations: 3910)
+
+
+Started GET "/static_pages/help" for ::1 at 2022-11-24 20:12:38 -0300
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.2ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 6403)
+Completed 500 Internal Server Error in 49ms (Allocations: 7238)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x0000000001e2a8>
+
+'.freeze;@output_buffer.append=( javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' );@output_buffer.safe_append='
+                                 ^^^^^^^^^^^^^^^^^^^
+Did you mean?  javascript_path
+               javascript_tag):
+     7: <%= csp_meta_tag %>
+     8: <%= stylesheet_link_tag 'application', media: 'all',
+     9: 'data-turbolinks-track': 'reload' %>
+    10: <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11: </head>
+    12: <body>
+    13: <%= yield %>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/help" for ::1 at 2022-11-24 20:12:44 -0300
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.2ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 3104)
+Completed 200 OK in 39ms (Views: 29.6ms | Allocations: 3943)
+
+
+Started GET "/static_pages/help" for ::1 at 2022-11-24 20:13:24 -0300
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 2.4ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 3051)
+Completed 200 OK in 40ms (Views: 30.5ms | Allocations: 3895)
+
+
+Started GET "/static_pages/contact" for ::1 at 2022-11-24 20:14:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/contact"):
+  
+Started GET "/static_pages/contact" for ::1 at 2022-11-24 20:14:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/contact"):
+  
+Started GET "/static_pages/contact" for ::1 at 2022-11-24 20:15:59 -0300
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 1.2ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 14821)
+Completed 200 OK in 80ms (Views: 73.0ms | Allocations: 15752)
+
+
