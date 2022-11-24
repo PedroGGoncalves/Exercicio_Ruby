@@ -3912,3 +3912,19 @@ Processing by StaticPagesController#contact as HTML
 Completed 200 OK in 80ms (Views: 73.0ms | Allocations: 15752)
 
 
+Started GET "/" for ::1 at 2022-11-24 20:18:21 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 14638)
+Completed 200 OK in 68ms (Views: 61.6ms | Allocations: 15360)
+
+
+Started GET "/" for ::1 at 2022-11-24 20:20:30 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 16.1ms | Allocations: 303)
+Completed 200 OK in 27ms (Views: 18.3ms | Allocations: 1100)
+
+
