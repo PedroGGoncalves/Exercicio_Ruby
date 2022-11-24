@@ -25,12 +25,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder", '2.9.1'
-
-
-gem 'sass-rails', '5.1.0'
-gem 'webpacker', '4.0.7'
-gem 'turbolinks', '5.2.0'
+gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -45,7 +40,7 @@ gem 'turbolinks', '5.2.0'
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", '1.4.5', require: false
+gem "bootsnap", require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -56,16 +51,11 @@ gem "bootsnap", '1.4.5', require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem 'sqlite3', '1.4.1'
-  gem 'byebug', '11.0.1', platforms: %i[ mri mingw x64_mingw ]
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console", '4.0.1'
-  gem 'listen', '3.1.5'
-  gem 'spring', '2.1.0'
-  gem 'spring-watcher-listen', '2.0.1'
+  gem "web-console"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -76,12 +66,8 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara', '3.28.0'
-  gem 'selenium-webdriver', '3.142.4'
-  gem 'webdrivers', '4.1.2'
+  gem "capybara"
+  gem "selenium-webdriver"
+  gem "webdrivers"
 end
-group :production do
-gem 'pg', '1.1.4'
-end
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
