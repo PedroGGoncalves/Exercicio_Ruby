@@ -3395,3 +3395,374 @@ Processing by MicropostsController#create as TURBO_STREAM
 Completed 422 Unprocessable Entity in 29ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 6796)
 
 
+Started GET "/" for ::1 at 2022-11-24 19:33:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 110.6ms | Allocations: 5954)
+  Rendered layout layouts/application.html.erb (Duration: 629.7ms | Allocations: 42051)
+Completed 200 OK in 813ms (Views: 654.9ms | ActiveRecord: 6.3ms | Allocations: 47867)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 19:33:22 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 120.4ms | Allocations: 3064)
+  Rendered users/show.html.erb within layouts/application (Duration: 140.5ms | Allocations: 4330)
+  Rendered layout layouts/application.html.erb (Duration: 155.1ms | Allocations: 6706)
+Completed 200 OK in 203ms (Views: 156.7ms | ActiveRecord: 0.5ms | Allocations: 9598)
+
+
+Started DELETE "/users/10" for ::1 at 2022-11-24 19:33:24 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (1.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 20ms (ActiveRecord: 6.7ms | Allocations: 2941)
+
+
+Started GET "/users" for ::1 at 2022-11-24 19:33:25 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 798)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3181)
+Completed 200 OK in 22ms (Views: 16.4ms | ActiveRecord: 0.3ms | Allocations: 3554)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 19:33:26 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 118.1ms | Allocations: 3211)
+  Rendered users/new.html.erb within layouts/application (Duration: 123.2ms | Allocations: 3552)
+  Rendered layout layouts/application.html.erb (Duration: 137.0ms | Allocations: 5940)
+Completed 200 OK in 145ms (Views: 138.4ms | ActiveRecord: 0.0ms | Allocations: 6373)
+
+
+Started POST "/users" for ::1 at 2022-11-24 19:33:31 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Pedro Gabriel Gonçalves", "email"=>"pedro.g.goncalves82@gmail.com"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (18.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pedro Gabriel Gonçalves"], ["email", "pedro.g.goncalves82@gmail.com"], ["created_at", "2022-11-24 22:33:32.046981"], ["updated_at", "2022-11-24 22:33:32.046981"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/11
+Completed 302 Found in 47ms (ActiveRecord: 22.1ms | Allocations: 3479)
+
+
+Started GET "/users/11" for ::1 at 2022-11-24 19:33:32 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 58)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 687)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2955)
+Completed 200 OK in 23ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 3752)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 19:33:40 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 1.4ms | Allocations: 214)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 23.2ms | Allocations: 4971)
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 7459)
+Completed 200 OK in 54ms (Views: 44.9ms | ActiveRecord: 1.7ms | Allocations: 8351)
+
+
+Started GET "/users" for ::1 at 2022-11-24 19:33:44 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 903)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3178)
+Completed 200 OK in 23ms (Views: 16.9ms | ActiveRecord: 0.4ms | Allocations: 3490)
+
+
+Started GET "/users/11" for ::1 at 2022-11-24 19:33:46 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 599)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 2866)
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 0.3ms | Allocations: 3636)
+
+
+Started GET "/microposts/7" for ::1 at 2022-11-24 19:33:54 -0300
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 762)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 3029)
+Completed 200 OK in 28ms (Views: 17.7ms | ActiveRecord: 0.4ms | Allocations: 4503)
+
+
+Started DELETE "/microposts/7" for ::1 at 2022-11-24 19:33:54 -0300
+Processing by MicropostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"7"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mMicropost Destroy (21.8ms)[0m  [1m[31mDELETE FROM "microposts" WHERE "microposts"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/microposts
+Completed 302 Found in 39ms (ActiveRecord: 25.6ms | Allocations: 2459)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 19:33:55 -0300
+Processing by MicropostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 748)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3023)
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 0.6ms | Allocations: 3314)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 19:33:56 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 194.5ms | Allocations: 11260)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 199.3ms | Allocations: 11560)
+  Rendered layout layouts/application.html.erb (Duration: 212.8ms | Allocations: 13946)
+Completed 200 OK in 223ms (Views: 214.1ms | ActiveRecord: 0.0ms | Allocations: 14333)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 19:34:02 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8] A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, Iro", "text"=>"Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]  A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, Ir", "user_id"=>"11"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 4.8ms | Allocations: 2275)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2370)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 4743)
+Completed 422 Unprocessable Entity in 99ms (Views: 21.0ms | ActiveRecord: 0.6ms | Allocations: 10301)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 19:34:07 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"Ruby é uma linguage", "text"=>"Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]  A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, Ir", "user_id"=>"11"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mMicropost Create (1.8ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Ruby é uma linguage"], ["text", "Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]  A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, Ir"], ["user_id", 11], ["created_at", "2022-11-24 22:34:07.915610"], ["updated_at", "2022-11-24 22:34:07.915610"]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/microposts/8
+Completed 302 Found in 25ms (ActiveRecord: 7.6ms | Allocations: 3495)
+
+
+Started GET "/microposts/8" for ::1 at 2022-11-24 19:34:07 -0300
+Processing by MicropostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"8"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 2859)
+Completed 200 OK in 23ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 3618)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 19:34:13 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 886)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3161)
+Completed 200 OK in 23ms (Views: 17.8ms | ActiveRecord: 0.4ms | Allocations: 3451)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 19:34:16 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.4ms | Allocations: 1213)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1300)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 3580)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 3873)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 19:34:25 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"Ruby é uma l", "text"=>"Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]  A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, Ir", "user_id"=>"11"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mMicropost Create (24.9ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Ruby é uma l"], ["text", "Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]  A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, Ir"], ["user_id", 11], ["created_at", "2022-11-24 22:34:25.859749"], ["updated_at", "2022-11-24 22:34:25.859749"]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/microposts/9
+Completed 302 Found in 46ms (ActiveRecord: 29.0ms | Allocations: 3219)
+
+
+Started GET "/microposts/9" for ::1 at 2022-11-24 19:34:25 -0300
+Processing by MicropostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"9"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 596)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 2869)
+Completed 200 OK in 24ms (Views: 16.9ms | ActiveRecord: 0.3ms | Allocations: 3619)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 19:34:28 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1021)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 3296)
+Completed 200 OK in 25ms (Views: 18.7ms | ActiveRecord: 0.4ms | Allocations: 3585)
+
+
+Started GET "/" for ::1 at 2022-11-24 19:34:33 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 922)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 3225)
+Completed 200 OK in 45ms (Views: 33.7ms | ActiveRecord: 1.1ms | Allocations: 3513)
+
+
+Started GET "/users/11" for ::1 at 2022-11-24 19:34:35 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 613)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 2880)
+Completed 200 OK in 24ms (Views: 17.8ms | ActiveRecord: 0.4ms | Allocations: 3629)
+
+
+Started GET "/" for ::1 at 2022-11-24 19:52:51 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 20)
+Completed 200 OK in 77ms (Views: 48.8ms | ActiveRecord: 0.0ms | Allocations: 2646)
+
+
+Started GET "/static_pages/home" for ::1 at 2022-11-24 19:53:25 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 276.9ms | Allocations: 37170)
+Completed 200 OK in 310ms (Views: 287.9ms | ActiveRecord: 0.0ms | Allocations: 38964)
+
+
+Started GET "/static_pages/home" for ::1 at 2022-11-24 19:56:02 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 3042)
+Completed 200 OK in 38ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 3934)
+
+
+Started GET "/static_pages/help" for ::1 at 2022-11-24 19:56:13 -0300
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.1ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 2543)
+Completed 200 OK in 25ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 2894)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/static_pages/about" for ::1 at 2022-11-24 19:59:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/about"):
+  
+Started GET "/static_pages/about" for ::1 at 2022-11-24 20:00:53 -0300
+  
+LoadError (cannot load such file -- test_helper):
+  
+app/controllers/static_pages_controller.rb:1:in `<main>'
+Started GET "/static_pages/about" for ::1 at 2022-11-24 20:03:59 -0300
+  
+NoMethodError (undefined method `TESTING' for StaticPagesController:Class
+
+3.3. GETTING STARTED WITH TESTING 151
+                          ^^^^^^^
+Did you mean?  test):
+  
+app/controllers/static_pages_controller.rb:4:in `<class:StaticPagesController>'
+app/controllers/static_pages_controller.rb:1:in `<main>'
+Started GET "/static_pages/about" for ::1 at 2022-11-24 20:04:08 -0300
+Processing by StaticPagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 1.1ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 217.6ms | Allocations: 36689)
+Completed 200 OK in 253ms (Views: 228.5ms | Allocations: 39038)
+
+
