@@ -65,6 +65,5 @@ Resposta: ```<div style="color: red">
       <ul>
           <li>Content is too long (maximum is 140 characters)</li>
       </ul>
-    </div>
-```
+    </div>```
 
