@@ -5,3 +5,5 @@ Exercício de processo seletivo de estágio da Alpop, nele será reproduzido o R
 O exercicío será realizar todos os processos até o capítulo 6.
 
 ## Capítulo 1
+
+Nesse capítulo é realizado toda a instalação e configuração do Rails. Também é feito um "hello, world", e 3 exercicíos que são uma variação dele.
