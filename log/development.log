@@ -280,3 +280,3118 @@ Processing by ApplicationController#goodbye as HTML
 Completed 200 OK in 9ms (Views: 2.3ms | Allocations: 542)
 
 
+Started GET "/" for ::1 at 2022-11-24 10:37:03 -0300
+Processing by ApplicationController#goodbye as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 1.2ms | Allocations: 203)
+
+
+Started GET "/" for ::1 at 2022-11-24 13:58:18 -0300
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 20)
+Completed 200 OK in 177ms (Views: 115.2ms | ActiveRecord: 0.0ms | Allocations: 2595)
+
+
+Started GET "/" for ::1 at 2022-11-24 14:00:39 -0300
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 9ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 248)
+
+
+Started GET "/" for ::1 at 2022-11-24 14:01:34 -0300
+  [1m[35m (67.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20221124170107_create_users.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-11-24 14:01:42 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20221124170107_create_users.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-11-24 14:01:46 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20221124170107_create_users.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-11-24 14:01:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20221124170107_create_users.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-11-24 14:01:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20221124170107_create_users.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20221124170107)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221124170107"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-24 17:03:09.505168"], ["updated_at", "2022-11-24 17:03:09.505168"]]
+  [1m[36mTRANSACTION (54.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-11-24 14:03:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 20)
+Completed 200 OK in 38ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 2608)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:05:12 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1763)
+  Rendered layout layouts/application.html.erb (Duration: 1188.7ms | Allocations: 38154)
+Completed 200 OK in 1237ms (Views: 1199.4ms | ActiveRecord: 0.5ms | Allocations: 40867)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 14:05:27 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 187.2ms | Allocations: 4992)
+  Rendered users/new.html.erb within layouts/application (Duration: 191.4ms | Allocations: 5345)
+  Rendered layout layouts/application.html.erb (Duration: 205.2ms | Allocations: 7738)
+Completed 200 OK in 230ms (Views: 206.7ms | ActiveRecord: 1.6ms | Allocations: 12530)
+
+
+Started GET "/users/1" for ::1 at 2022-11-24 14:08:12 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+Completed 404 Not Found in 206ms (ActiveRecord: 0.7ms | Allocations: 9612)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:63:in `set_user'
+Started POST "/users" for ::1 at 2022-11-24 14:08:38 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Pedro Gabriel Gonçalves", "email"=>"pedro.g.goncalves@unesp.br"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pedro Gabriel Gonçalves"], ["email", "pedro.g.goncalves@unesp.br"], ["created_at", "2022-11-24 17:08:38.768099"], ["updated_at", "2022-11-24 17:08:38.768099"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (37.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 52ms (ActiveRecord: 39.3ms | Allocations: 3742)
+
+
+Started GET "/users/1" for ::1 at 2022-11-24 14:08:38 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 1.1ms | Allocations: 228)
+  Rendered users/show.html.erb within layouts/application (Duration: 31.9ms | Allocations: 1566)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 3956)
+Completed 200 OK in 53ms (Views: 44.7ms | ActiveRecord: 0.3ms | Allocations: 4951)
+
+
+Started GET "/users/1/edit" for ::1 at 2022-11-24 14:08:54 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.8ms | Allocations: 1218)
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 3761)
+Completed 200 OK in 28ms (Views: 19.3ms | ActiveRecord: 0.3ms | Allocations: 4649)
+
+
+Started PATCH "/users/1" for ::1 at 2022-11-24 14:09:04 -0300
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Pedro Gabriel Gonçalves", "email"=>"pedro.g.goncalves@unesp.br"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms | Allocations: 1254)
+
+
+Started GET "/users/1" for ::1 at 2022-11-24 14:09:04 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 567)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 2835)
+Completed 200 OK in 25ms (Views: 17.8ms | ActiveRecord: 0.3ms | Allocations: 3587)
+
+
+Started GET "/users/" for ::1 at 2022-11-24 14:09:07 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 924)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 3200)
+Completed 200 OK in 45ms (Views: 37.4ms | ActiveRecord: 0.4ms | Allocations: 3489)
+
+
+Started GET "/users/1" for ::1 at 2022-11-24 14:09:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 562)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 2829)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 0.3ms | Allocations: 3577)
+
+
+Started DELETE "/users/1" for ::1 at 2022-11-24 14:09:25 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (1.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 20ms (ActiveRecord: 7.6ms | Allocations: 2445)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:09:25 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 747)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3022)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 0.3ms | Allocations: 3312)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 14:10:12 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.7ms | Allocations: 994)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1081)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3356)
+Completed 200 OK in 21ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 3651)
+
+
+Started POST "/users" for ::1 at 2022-11-24 14:10:16 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Pedro Gabriel Gonçalves", "email"=>"pedro.g.goncalves@unesp.br"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pedro Gabriel Gonçalves"], ["email", "pedro.g.goncalves@unesp.br"], ["created_at", "2022-11-24 17:10:16.119411"], ["updated_at", "2022-11-24 17:10:16.119411"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 17ms (ActiveRecord: 5.8ms | Allocations: 2263)
+
+
+Started GET "/users/2" for ::1 at 2022-11-24 14:10:16 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 587)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 2854)
+Completed 200 OK in 25ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 3603)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:10:19 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 3158)
+Completed 200 OK in 21ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 3447)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 14:10:20 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.6ms | Allocations: 997)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1084)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3359)
+Completed 200 OK in 21ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 3650)
+
+
+Started POST "/users" for ::1 at 2022-11-24 14:10:41 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elsa Montinelli", "email"=>"e.montinelli@gmail.com"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elsa Montinelli"], ["email", "e.montinelli@gmail.com"], ["created_at", "2022-11-24 17:10:41.745180"], ["updated_at", "2022-11-24 17:10:41.745180"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (56.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 71ms (ActiveRecord: 58.8ms | Allocations: 2235)
+
+
+Started GET "/users/3" for ::1 at 2022-11-24 14:10:41 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 2831)
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 0.3ms | Allocations: 3580)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:10:43 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1027)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3302)
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.3ms | Allocations: 3591)
+
+
+Started GET "/users/3" for ::1 at 2022-11-24 14:10:55 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 554)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2821)
+Completed 200 OK in 21ms (Views: 14.7ms | ActiveRecord: 0.3ms | Allocations: 3569)
+
+
+Started DELETE "/users/3" for ::1 at 2022-11-24 14:10:57 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (20.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 35ms (ActiveRecord: 23.9ms | Allocations: 2353)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:10:57 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 911)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3186)
+Completed 200 OK in 21ms (Views: 16.4ms | ActiveRecord: 0.4ms | Allocations: 3476)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 14:10:59 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.6ms | Allocations: 988)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1075)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3350)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 3641)
+
+
+Started POST "/users" for ::1 at 2022-11-24 14:11:03 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elsa Montinelli", "email"=>"e.montinelli@gmail.com"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elsa Montinelli"], ["email", "e.montinelli@gmail.com"], ["created_at", "2022-11-24 17:11:04.102202"], ["updated_at", "2022-11-24 17:11:04.102202"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 16ms (ActiveRecord: 5.6ms | Allocations: 2243)
+
+
+Started GET "/users/4" for ::1 at 2022-11-24 14:11:04 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 604)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 2884)
+Completed 200 OK in 22ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 3634)
+
+
+Started GET "/users/4" for ::1 at 2022-11-24 14:11:49 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 2824)
+Completed 200 OK in 26ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 3570)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 14:11:52 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.9ms | Allocations: 1003)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1090)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 3365)
+Completed 200 OK in 29ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 3656)
+
+
+Started POST "/users" for ::1 at 2022-11-24 14:11:58 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elsa Montinelli", "email"=>"e.montinelli@gmail.com"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elsa Montinelli"], ["email", "e.montinelli@gmail.com"], ["created_at", "2022-11-24 17:11:58.408310"], ["updated_at", "2022-11-24 17:11:58.408310"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 19ms (ActiveRecord: 6.0ms | Allocations: 2229)
+
+
+Started GET "/users/5" for ::1 at 2022-11-24 14:11:58 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 576)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 2843)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 3592)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:12:18 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1159)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 3447)
+Completed 200 OK in 26ms (Views: 21.4ms | ActiveRecord: 0.4ms | Allocations: 3737)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 14:12:21 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.7ms | Allocations: 991)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1078)
+  Rendered layout layouts/application.html.erb (Duration: 46.5ms | Allocations: 3353)
+Completed 200 OK in 52ms (Views: 47.6ms | ActiveRecord: 0.0ms | Allocations: 3644)
+
+
+Started POST "/users" for ::1 at 2022-11-24 14:12:26 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elsa Montinelli", "email"=>"e.montinelli@gmail.com"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elsa Montinelli"], ["email", "e.montinelli@gmail.com"], ["created_at", "2022-11-24 17:12:26.410023"], ["updated_at", "2022-11-24 17:12:26.410023"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 18ms (ActiveRecord: 6.3ms | Allocations: 2228)
+
+
+Started GET "/users/6" for ::1 at 2022-11-24 14:12:26 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 2859)
+Completed 200 OK in 24ms (Views: 17.4ms | ActiveRecord: 0.3ms | Allocations: 3608)
+
+
+Started GET "/users/6" for ::1 at 2022-11-24 14:12:44 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 554)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 2821)
+Completed 200 OK in 25ms (Views: 17.2ms | ActiveRecord: 0.4ms | Allocations: 3567)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:16:15 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.5ms | Allocations: 21)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1292)
+  Rendered layout layouts/application.html.erb (Duration: 65.0ms | Allocations: 3567)
+Completed 200 OK in 72ms (Views: 65.8ms | ActiveRecord: 0.4ms | Allocations: 3856)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 14:16:19 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.8ms | Allocations: 1006)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1093)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3368)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 3659)
+
+
+Started POST "/users" for ::1 at 2022-11-24 14:16:27 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elsa Montinelli", "email"=>""}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elsa Montinelli"], ["email", ""], ["created_at", "2022-11-24 17:16:27.211356"], ["updated_at", "2022-11-24 17:16:27.211356"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/7
+Completed 302 Found in 20ms (ActiveRecord: 5.6ms | Allocations: 2236)
+
+
+Started GET "/users/7" for ::1 at 2022-11-24 14:16:27 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2837)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 3586)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:16:31 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1409)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 3684)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 0.4ms | Allocations: 3973)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 14:16:52 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.6ms | Allocations: 988)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1075)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3350)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 3641)
+
+
+Started POST "/users" for ::1 at 2022-11-24 14:16:54 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"aaa", "email"=>""}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aaa"], ["email", ""], ["created_at", "2022-11-24 17:16:54.875452"], ["updated_at", "2022-11-24 17:16:54.875452"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/8
+Completed 302 Found in 18ms (ActiveRecord: 7.0ms | Allocations: 2178)
+
+
+Started GET "/users/8" for ::1 at 2022-11-24 14:16:54 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 2837)
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 0.3ms | Allocations: 3586)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:17:25 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1535)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 3810)
+Completed 200 OK in 25ms (Views: 20.2ms | ActiveRecord: 0.4ms | Allocations: 4099)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 14:17:27 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.5ms | Allocations: 1024)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1111)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 3386)
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 3677)
+
+
+Started POST "/users" for ::1 at 2022-11-24 14:17:35 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"a", "email"=>"a@a.com"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "a"], ["email", "a@a.com"], ["created_at", "2022-11-24 17:17:35.287274"], ["updated_at", "2022-11-24 17:17:35.287274"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 16ms (ActiveRecord: 5.7ms | Allocations: 2222)
+
+
+Started GET "/users/9" for ::1 at 2022-11-24 14:17:35 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 2837)
+Completed 200 OK in 21ms (Views: 15.3ms | ActiveRecord: 0.3ms | Allocations: 3586)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:17:38 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1673)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 3959)
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 0.4ms | Allocations: 4248)
+
+
+Started GET "/users/2" for ::1 at 2022-11-24 14:18:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2830)
+Completed 200 OK in 22ms (Views: 15.3ms | ActiveRecord: 0.3ms | Allocations: 3579)
+
+
+Started DELETE "/users/2" for ::1 at 2022-11-24 14:18:19 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (1.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 17ms (ActiveRecord: 5.4ms | Allocations: 2348)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:18:19 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1553)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 3828)
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 0.4ms | Allocations: 4118)
+
+
+Started GET "/users/4" for ::1 at 2022-11-24 14:18:50 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 2818)
+Completed 200 OK in 22ms (Views: 15.5ms | ActiveRecord: 0.3ms | Allocations: 3566)
+
+
+Started DELETE "/users/4" for ::1 at 2022-11-24 14:18:52 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (1.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 59ms (ActiveRecord: 5.8ms | Allocations: 2345)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:18:52 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1432)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 3707)
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 0.3ms | Allocations: 3997)
+
+
+Started GET "/users/5" for ::1 at 2022-11-24 14:18:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 572)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 2839)
+Completed 200 OK in 22ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 3587)
+
+
+Started DELETE "/users/5" for ::1 at 2022-11-24 14:18:55 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (9.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 25ms (ActiveRecord: 13.4ms | Allocations: 2357)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:18:55 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1291)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 3577)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.3ms | Allocations: 3867)
+
+
+Started GET "/users/6" for ::1 at 2022-11-24 14:18:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 563)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 2830)
+Completed 200 OK in 22ms (Views: 15.4ms | ActiveRecord: 0.3ms | Allocations: 3578)
+
+
+Started DELETE "/users/6" for ::1 at 2022-11-24 14:18:58 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (2.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 17ms (ActiveRecord: 6.0ms | Allocations: 2333)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:18:59 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1156)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 3434)
+Completed 200 OK in 22ms (Views: 17.4ms | ActiveRecord: 0.4ms | Allocations: 3724)
+
+
+Started GET "/users/9" for ::1 at 2022-11-24 14:19:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 2827)
+Completed 200 OK in 21ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 3575)
+
+
+Started DELETE "/users/9" for ::1 at 2022-11-24 14:19:02 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (15.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 32ms (ActiveRecord: 20.6ms | Allocations: 2354)
+
+
+Started GET "/users" for ::1 at 2022-11-24 14:19:02 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1050)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 3325)
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 0.4ms | Allocations: 3615)
+
+
+Started GET "/users/7" for ::1 at 2022-11-24 14:19:05 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 554)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 2821)
+Completed 200 OK in 24ms (Views: 16.4ms | ActiveRecord: 0.3ms | Allocations: 3569)
+
+
+Started GET "/users/7" for ::1 at 2022-11-24 14:22:03 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.5ms | Allocations: 42)
+  Rendered users/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 839)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 15031)
+Completed 200 OK in 84ms (Views: 62.5ms | ActiveRecord: 2.6ms | Allocations: 19398)
+
+
+Started GET "/" for ::1 at 2022-11-24 14:22:08 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1122)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 3398)
+Completed 200 OK in 28ms (Views: 22.9ms | ActiveRecord: 0.5ms | Allocations: 3709)
+
+
+Started GET "/" for ::1 at 2022-11-24 14:22:11 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1016)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 3293)
+Completed 200 OK in 25ms (Views: 19.5ms | ActiveRecord: 0.3ms | Allocations: 3581)
+
+
+Started GET "/" for ::1 at 2022-11-24 14:24:02 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1600)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 4270)
+Completed 200 OK in 44ms (Views: 34.0ms | ActiveRecord: 0.4ms | Allocations: 5150)
+
+
+Started GET "/users/7/edit" for ::1 at 2022-11-24 14:26:57 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 1517)
+  Rendered users/edit.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1852)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 4119)
+Completed 200 OK in 31ms (Views: 20.8ms | ActiveRecord: 0.3ms | Allocations: 4965)
+
+
+Started GET "/users/7/edit" for ::1 at 2022-11-24 14:32:30 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.0ms | Allocations: 1077)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1200)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3467)
+Completed 200 OK in 55ms (Views: 17.1ms | ActiveRecord: 1.4ms | Allocations: 4390)
+
+
+Started GET "/users/7/edit" for ::1 at 2022-11-24 14:33:35 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.7ms | Allocations: 1080)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1203)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 3470)
+Completed 200 OK in 50ms (Views: 40.6ms | ActiveRecord: 0.5ms | Allocations: 4218)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMicroposts (20221124173856)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "microposts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "text" varchar, "user_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221124173856"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/7/edit" for ::1 at 2022-11-24 14:40:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 39.3ms | Allocations: 3673)
+  Rendered users/edit.html.erb within layouts/application (Duration: 47.1ms | Allocations: 4389)
+  Rendered layout layouts/application.html.erb (Duration: 268.0ms | Allocations: 40786)
+Completed 200 OK in 470ms (Views: 299.9ms | ActiveRecord: 8.0ms | Allocations: 52116)
+
+
+Started GET "/" for ::1 at 2022-11-24 14:40:42 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1621)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 4011)
+Completed 200 OK in 39ms (Views: 29.0ms | ActiveRecord: 0.6ms | Allocations: 4477)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:40:50 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1278)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 3768)
+Completed 200 OK in 49ms (Views: 31.7ms | ActiveRecord: 0.4ms | Allocations: 5129)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 14:40:55 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 18.9ms | Allocations: 2183)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 22.6ms | Allocations: 2489)
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 4877)
+Completed 200 OK in 58ms (Views: 38.7ms | ActiveRecord: 1.3ms | Allocations: 8480)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 14:41:04 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"a", "text"=>"a", "user_id"=>"2"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mMicropost Create (24.1ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "a"], ["text", "a"], ["user_id", 2], ["created_at", "2022-11-24 17:41:04.384617"], ["updated_at", "2022-11-24 17:41:04.384617"]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/microposts/1
+Completed 302 Found in 54ms (ActiveRecord: 28.5ms | Allocations: 3746)
+
+
+Started GET "/microposts/1" for ::1 at 2022-11-24 14:41:04 -0300
+Processing by MicropostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (1.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 1.3ms | Allocations: 248)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1498)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 3875)
+Completed 200 OK in 42ms (Views: 29.8ms | ActiveRecord: 1.0ms | Allocations: 5515)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:41:10 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1001)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3278)
+Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 0.3ms | Allocations: 3602)
+
+
+Started GET "/microposts/1" for ::1 at 2022-11-24 14:42:11 -0300
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 574)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 2841)
+Completed 200 OK in 24ms (Views: 17.0ms | ActiveRecord: 0.3ms | Allocations: 3614)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:42:14 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3158)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 0.5ms | Allocations: 3447)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 14:42:15 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.9ms | Allocations: 1294)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1382)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3657)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 3953)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 14:42:22 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"a", "text"=>"b", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mMicropost Create (25.7ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "a"], ["text", "b"], ["user_id", 1], ["created_at", "2022-11-24 17:42:22.980792"], ["updated_at", "2022-11-24 17:42:22.980792"]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/microposts/2
+Completed 302 Found in 43ms (ActiveRecord: 29.5ms | Allocations: 2350)
+
+
+Started GET "/microposts/2" for ::1 at 2022-11-24 14:42:23 -0300
+Processing by MicropostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 2852)
+Completed 200 OK in 25ms (Views: 18.0ms | ActiveRecord: 0.3ms | Allocations: 3601)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:42:24 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1008)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 3283)
+Completed 200 OK in 42ms (Views: 34.5ms | ActiveRecord: 0.3ms | Allocations: 3572)
+
+
+Started GET "/microposts/1" for ::1 at 2022-11-24 14:44:40 -0300
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 562)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2829)
+Completed 200 OK in 24ms (Views: 16.8ms | ActiveRecord: 0.4ms | Allocations: 3577)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 14:44:44 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.2ms | Allocations: 1225)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1312)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3587)
+Completed 200 OK in 23ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 3879)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:46:31 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 1.1ms | Allocations: 200)
+  Rendered microposts/_micropost.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 232.7ms | Allocations: 12226)
+  Rendered layout layouts/application.html.erb (Duration: 234.1ms | Allocations: 12321)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.4ms | Allocations: 13178)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;		 @micropost.each do |micropost| 
+         		           ^^^^^):
+    27: 		</tr>
+    28: 	</thead>
+    29: 	<tbody>
+    30: 		<% @micropost.each do |micropost| %>
+    31: 		<tr>
+    32: 			<td>
+    33: 				<%= micropost.content %>
+  
+app/views/microposts/index.html.erb:30
+Started GET "/microposts" for ::1 at 2022-11-24 14:48:45 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 1.1ms | Allocations: 200)
+  Rendered microposts/_micropost.html.erb (Duration: 0.3ms | Allocations: 20)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 3831)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3914)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.4ms | Allocations: 4767)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;		 @micropost.each do |micropost| 
+         		           ^^^^^):
+    27: 		</tr>
+    28: 	</thead>
+    29: 	<tbody>
+    30: 		<% @micropost.each do |micropost| %>
+    31: 		<tr>
+    32: 			<td>
+    33: 				<%= micropost.content %>
+  
+app/views/microposts/index.html.erb:30
+Started GET "/microposts" for ::1 at 2022-11-24 14:49:24 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 1.1ms | Allocations: 200)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 3833)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 3919)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.4ms | Allocations: 4768)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;		 @micropost.each do |micropost| 
+         		           ^^^^^):
+    27: 		</tr>
+    28: 	</thead>
+    29: 	<tbody>
+    30: 		<% @micropost.each do |micropost| %>
+    31: 		<tr>
+    32: 			<td>
+    33: 				<%= micropost.content %>
+  
+app/views/microposts/index.html.erb:30
+Started GET "/microposts" for ::1 at 2022-11-24 14:50:03 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  Rendered microposts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1389)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1476)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 2339)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!--<p style="color: green"><%= notice %></p>
+
+<h1>Microposts</h1>
+
+<div id="microposts">
+  <% @microposts.each do |micropost| %>
+    <%= render micropost %>
+    <p>
+      <%= link_to "Show this micropost", micropost %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New micropost", new_micropost_path %>
+-->
+<p id="notice">
+	<%= notice %>
+</p>
+<h1>Micropost</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Content</th>
+			<th>User</th>
+			<th>Text</th>
+			<th colspan="4"></th>
+		</tr>
+	</thead>
+	<tbody>
+		
+		<tr>
+			<td>
+				<%= micropost.content %>
+				</td>
+			<td>
+				<%= micropost.user %>
+				</td>
+			<td>
+				<%= micropost.text %>
+				</td>
+			<td>
+				<%= link_to 'Show', micropost %>
+				</td>
+			<td>
+				<%= link_to 'Edit', edit_micropost_path(micropost) %>
+				</td>
+			<td>
+				<%= link_to 'Destroy', micropost, method: :delete,
+					data: { confirm: 'Are you sure?' } %>
+				</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+<br>
+	<%= link_to 'New User', new_micropost_path %>
+):
+1:    <!--<p style="color: green"><%= notice %></p>
+2:    
+3:    <h1>Microposts</h1>
+4:    
+5:    <div id="microposts">
+6:      <% @microposts.each do |micropost| %>
+7:        <%= render micropost %>
+8:        <p>
+9:          <%= link_to "Show this micropost", micropost %>
+10:        </p>
+11:      <% end %>
+12:    </div>
+13:    
+14:    <%= link_to "New micropost", new_micropost_path %>
+15:    -->
+16:    <p id="notice">
+17:    	<%= notice %>
+18:    </p>
+19:    <h1>Micropost</h1>
+20:    <table>
+21:    	<thead>
+22:    		<tr>
+23:    			<th>Content</th>
+24:    			<th>User</th>
+25:    			<th>Text</th>
+26:    			<th colspan="4"></th>
+27:    		</tr>
+28:    	</thead>
+29:    	<tbody>
+30:    		
+31:    		<tr>
+32:    			<td>
+33:    				<%= micropost.content %>
+34:    				</td>
+35:    			<td>
+36:    				<%= micropost.user %>
+37:    				</td>
+38:    			<td>
+39:    				<%= micropost.text %>
+40:    				</td>
+41:    			<td>
+42:    				<%= link_to 'Show', micropost %>
+43:    				</td>
+44:    			<td>
+45:    				<%= link_to 'Edit', edit_micropost_path(micropost) %>
+46:    				</td>
+47:    			<td>
+48:    				<%= link_to 'Destroy', micropost, method: :delete,
+49:    					data: { confirm: 'Are you sure?' } %>
+50:    				</td>
+51:    		</tr>
+52:    		<% end %>
+53:    	</tbody>
+54:    </table>
+55:    <br>
+56:    	<%= link_to 'New User', new_micropost_path %>
+  
+app/views/microposts/index.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/microposts/index.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/microposts/index.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/microposts/index.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/microposts/index.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/microposts/index.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+Started GET "/microposts" for ::1 at 2022-11-24 14:50:46 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 1.7ms | Allocations: 200)
+  Rendered microposts/_micropost.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3812)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3895)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.4ms | Allocations: 4744)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;		 @users.each do |user| 
+         		       ^^^^^):
+    26: 		</tr>
+    27: 	</thead>
+    28: 	<tbody>
+    29: 		<% @users.each do |user| %>
+    30: 		<tr>
+    31: 			<td>
+    32: 				<%= user.name %>
+  
+app/views/microposts/index.html.erb:29
+Started GET "/microposts" for ::1 at 2022-11-24 14:51:13 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 1.1ms | Allocations: 200)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1736)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 4410)
+Completed 200 OK in 46ms (Views: 39.2ms | ActiveRecord: 0.5ms | Allocations: 5287)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 14:51:39 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 3.5ms | Allocations: 1674)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1954)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 4229)
+Completed 200 OK in 30ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 4601)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 14:51:45 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"a", "text"=>"a", "user_id"=>"3"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mMicropost Create (1.8ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "a"], ["text", "a"], ["user_id", 3], ["created_at", "2022-11-24 17:51:45.173584"], ["updated_at", "2022-11-24 17:51:45.173584"]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/microposts/3
+Completed 302 Found in 34ms (ActiveRecord: 5.7ms | Allocations: 2360)
+
+
+Started GET "/microposts/3" for ::1 at 2022-11-24 14:51:45 -0300
+Processing by MicropostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 798)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 3074)
+Completed 200 OK in 33ms (Views: 22.3ms | ActiveRecord: 0.3ms | Allocations: 3949)
+
+
+Started GET "/microposts/3" for ::1 at 2022-11-24 14:52:08 -0300
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.4ms | Allocations: 21)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 556)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 2823)
+Completed 200 OK in 27ms (Views: 19.9ms | ActiveRecord: 0.3ms | Allocations: 3570)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:53:26 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1157)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3432)
+Completed 200 OK in 25ms (Views: 19.9ms | ActiveRecord: 0.4ms | Allocations: 3723)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 14:53:27 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.8ms | Allocations: 1222)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1309)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 3584)
+Completed 200 OK in 31ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 3876)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 14:53:28 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"", "text"=>"", "user_id"=>""}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mMicropost Create (2.0ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", ""], ["text", ""], ["user_id", nil], ["created_at", "2022-11-24 17:53:28.688765"], ["updated_at", "2022-11-24 17:53:28.688765"]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/microposts/4
+Completed 302 Found in 18ms (ActiveRecord: 6.7ms | Allocations: 2266)
+
+
+Started GET "/microposts/4" for ::1 at 2022-11-24 14:53:28 -0300
+Processing by MicropostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 2822)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 0.3ms | Allocations: 3571)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:53:31 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/_micropost.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1290)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 3565)
+Completed 200 OK in 25ms (Views: 20.5ms | ActiveRecord: 0.4ms | Allocations: 3854)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 14:54:45 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.4ms | Allocations: 1222)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1309)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3584)
+Completed 200 OK in 24ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 3876)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 14:54:52 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"a", "text"=>"Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]  A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, IronRuby, MacRuby e HotRuby, cada qual com uma abordagem diferente, com IronRuby,[10] JRuby[11] e MacRuby[12] fornecendo compilação JIT e, JRuby[11] e MacRuby[12] também fornecendo compilação AOT. A partir das séries 1.9 em diante Ruby passou a utilizar por padrão a YARV (Yet Another Ruby VirtualMachine) substituindo a Ruby MRI (Matz's Ruby Interpreter).[13]", "user_id"=>"-1"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mMicropost Create (2.0ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "a"], ["text", "Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]  A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, IronRuby, MacRuby e HotRuby, cada qual com uma abordagem diferente, com IronRuby,[10] JRuby[11] e MacRuby[12] fornecendo compilação JIT e, JRuby[11] e MacRuby[12] também fornecendo compilação AOT. A partir das séries 1.9 em diante Ruby passou a utilizar por padrão a YARV (Yet Another Ruby VirtualMachine) substituindo a Ruby MRI (Matz's Ruby Interpreter).[13]"], ["user_id", -1], ["created_at", "2022-11-24 17:54:52.287974"], ["updated_at", "2022-11-24 17:54:52.287974"]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/microposts/5
+Completed 302 Found in 18ms (ActiveRecord: 5.6ms | Allocations: 2275)
+
+
+Started GET "/microposts/5" for ::1 at 2022-11-24 14:54:52 -0300
+Processing by MicropostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2859)
+Completed 200 OK in 23ms (Views: 16.1ms | ActiveRecord: 0.5ms | Allocations: 3608)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:55:24 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered microposts/_micropost.html.erb (Duration: 1.1ms | Allocations: 20)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1417)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 3692)
+Completed 200 OK in 30ms (Views: 24.4ms | ActiveRecord: 0.6ms | Allocations: 3981)
+
+
+Started GET "/microposts/1" for ::1 at 2022-11-24 14:55:43 -0300
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2826)
+Completed 200 OK in 24ms (Views: 16.3ms | ActiveRecord: 0.3ms | Allocations: 3574)
+
+
+Started DELETE "/microposts/1" for ::1 at 2022-11-24 14:55:44 -0300
+Processing by MicropostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mMicropost Destroy (22.6ms)[0m  [1m[31mDELETE FROM "microposts" WHERE "microposts"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/microposts
+Completed 302 Found in 41ms (ActiveRecord: 27.9ms | Allocations: 2447)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:55:44 -0300
+Processing by MicropostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 3604)
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 0.4ms | Allocations: 3894)
+
+
+Started GET "/microposts/2" for ::1 at 2022-11-24 14:55:45 -0300
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2826)
+Completed 200 OK in 25ms (Views: 16.9ms | ActiveRecord: 0.3ms | Allocations: 3574)
+
+
+Started DELETE "/microposts/2" for ::1 at 2022-11-24 14:55:46 -0300
+Processing by MicropostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mMicropost Destroy (44.3ms)[0m  [1m[31mDELETE FROM "microposts" WHERE "microposts"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/microposts
+Completed 302 Found in 61ms (ActiveRecord: 48.2ms | Allocations: 2359)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:55:47 -0300
+Processing by MicropostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1185)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 3469)
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 0.3ms | Allocations: 3759)
+
+
+Started GET "/microposts/3" for ::1 at 2022-11-24 14:55:48 -0300
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 565)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 2832)
+Completed 200 OK in 27ms (Views: 18.1ms | ActiveRecord: 0.3ms | Allocations: 3580)
+
+
+Started DELETE "/microposts/3" for ::1 at 2022-11-24 14:55:49 -0300
+Processing by MicropostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mMicropost Destroy (15.0ms)[0m  [1m[31mDELETE FROM "microposts" WHERE "microposts"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/microposts
+Completed 302 Found in 31ms (ActiveRecord: 19.2ms | Allocations: 2341)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:55:49 -0300
+Processing by MicropostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 3332)
+Completed 200 OK in 29ms (Views: 24.2ms | ActiveRecord: 0.3ms | Allocations: 3622)
+
+
+Started GET "/microposts/4" for ::1 at 2022-11-24 14:55:49 -0300
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 545)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2812)
+Completed 200 OK in 24ms (Views: 16.9ms | ActiveRecord: 0.3ms | Allocations: 3560)
+
+
+Started DELETE "/microposts/4" for ::1 at 2022-11-24 14:55:50 -0300
+Processing by MicropostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mMicropost Destroy (27.4ms)[0m  [1m[31mDELETE FROM "microposts" WHERE "microposts"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/microposts
+Completed 302 Found in 46ms (ActiveRecord: 32.1ms | Allocations: 2347)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:55:51 -0300
+Processing by MicropostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 925)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3200)
+Completed 200 OK in 24ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 3490)
+
+
+Started GET "/microposts/5" for ::1 at 2022-11-24 14:55:51 -0300
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 2828)
+Completed 200 OK in 46ms (Views: 38.8ms | ActiveRecord: 0.4ms | Allocations: 3576)
+
+
+Started DELETE "/microposts/5" for ::1 at 2022-11-24 14:55:52 -0300
+Processing by MicropostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mMicropost Destroy (9.4ms)[0m  [1m[31mDELETE FROM "microposts" WHERE "microposts"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/microposts
+Completed 302 Found in 27ms (ActiveRecord: 14.0ms | Allocations: 2335)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:55:53 -0300
+Processing by MicropostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 759)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3034)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 0.4ms | Allocations: 3324)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:56:34 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1195)
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 15444)
+Completed 200 OK in 92ms (Views: 74.1ms | ActiveRecord: 1.5ms | Allocations: 16998)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 14:56:47 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.2ms | Allocations: 1375)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1470)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3747)
+Completed 200 OK in 31ms (Views: 21.5ms | ActiveRecord: 1.6ms | Allocations: 5848)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 14:56:53 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"a", "text"=>"Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]  A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, IronRuby, MacRuby e HotRuby, cada qual com uma abordagem diferente, com IronRuby,[10] JRuby[11] e MacRuby[12] fornecendo compilação JIT e, JRuby[11] e MacRuby[12] também fornecendo compilação AOT. A partir das séries 1.9 em diante Ruby passou a utilizar por padrão a YARV (Yet Another Ruby VirtualMachine) substituindo a Ruby MRI (Matz's Ruby Interpreter).[13]", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mMicropost Create (1.9ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "a"], ["text", "Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]  A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, IronRuby, MacRuby e HotRuby, cada qual com uma abordagem diferente, com IronRuby,[10] JRuby[11] e MacRuby[12] fornecendo compilação JIT e, JRuby[11] e MacRuby[12] também fornecendo compilação AOT. A partir das séries 1.9 em diante Ruby passou a utilizar por padrão a YARV (Yet Another Ruby VirtualMachine) substituindo a Ruby MRI (Matz's Ruby Interpreter).[13]"], ["user_id", 1], ["created_at", "2022-11-24 17:56:54.055101"], ["updated_at", "2022-11-24 17:56:54.055101"]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/microposts/6
+Completed 302 Found in 20ms (ActiveRecord: 7.2ms | Allocations: 2555)
+
+
+Started GET "/microposts/6" for ::1 at 2022-11-24 14:56:54 -0300
+Processing by MicropostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 688)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2955)
+Completed 200 OK in 24ms (Views: 16.5ms | ActiveRecord: 0.6ms | Allocations: 4375)
+
+
+Started DELETE "/microposts/6" for ::1 at 2022-11-24 14:57:24 -0300
+Processing by MicropostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mMicropost Destroy (32.2ms)[0m  [1m[31mDELETE FROM "microposts" WHERE "microposts"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/microposts
+Completed 302 Found in 49ms (ActiveRecord: 36.1ms | Allocations: 2377)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:57:24 -0300
+Processing by MicropostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 750)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 3025)
+Completed 200 OK in 25ms (Views: 18.3ms | ActiveRecord: 0.4ms | Allocations: 3316)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 14:57:26 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.5ms | Allocations: 1231)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1318)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3593)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 3885)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 14:57:31 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro \"Matz\" Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python.[6] Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva. Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python.[7] Ruby está entre as 10 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8] A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe.[9] Não há qualquer especificação da linguagem, assim a implementação original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, IronRuby, MacRuby e HotRuby, cada qual com uma abordagem diferente, com IronRuby,[10] JRuby[11] e MacRuby[12] fornecendo compilação JIT e, JRuby[11] e MacRuby[12] também fornecendo compilação AOT. A partir das séries 1.9 em diante Ruby passou a utilizar por padrão a YARV (Yet Another Ruby VirtualMachine) substituindo a Ruby MRI (Matz's Ruby Interpreter).[13]", "text"=>"a", "user_id"=>"2"}, "commit"=>"Create Micropost"}
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 3.4ms | Allocations: 2168)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2255)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4522)
+Completed 422 Unprocessable Entity in 26ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 5647)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 14:58:06 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 3030)
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 0.5ms | Allocations: 3319)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 14:58:46 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 1.9ms | Allocations: 1213)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1300)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3575)
+Completed 200 OK in 23ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 3867)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 14:58:50 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"(For readers who know CSS) Use your browser’s HTML inspector to determine the CSS id of the error message produced by the previous ex\u0002ercise.", "text"=>"a", "user_id"=>"2"}, "commit"=>"Create Micropost"}
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 3.5ms | Allocations: 2061)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2148)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4415)
+Completed 422 Unprocessable Entity in 25ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 5502)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = ?[0m  [["user_id", 7]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = ?[0m  [["user_id", 7]]
+Started GET "/users" for ::1 at 2022-11-24 15:14:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 76.1ms | Allocations: 6108)
+  Rendered layout layouts/application.html.erb (Duration: 285.8ms | Allocations: 42538)
+Completed 200 OK in 379ms (Views: 313.5ms | ActiveRecord: 2.7ms | Allocations: 48241)
+
+
+Started GET "/users/7/edit" for ::1 at 2022-11-24 15:14:10 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 171.5ms | Allocations: 3349)
+  Rendered users/edit.html.erb within layouts/application (Duration: 180.0ms | Allocations: 3778)
+  Rendered layout layouts/application.html.erb (Duration: 197.2ms | Allocations: 6157)
+Completed 200 OK in 496ms (Views: 198.6ms | ActiveRecord: 0.6ms | Allocations: 16081)
+
+
+Started GET "/users/7" for ::1 at 2022-11-24 15:14:14 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 1.5ms | Allocations: 222)
+  Rendered users/show.html.erb within layouts/application (Duration: 41.1ms | Allocations: 1403)
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 3780)
+Completed 200 OK in 73ms (Views: 60.0ms | ActiveRecord: 0.4ms | Allocations: 4764)
+
+
+Started GET "/users/1" for ::1 at 2022-11-24 15:14:36 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.3ms | Allocations: 1021)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:63:in `set_user'
+Started GET "/users/7" for ::1 at 2022-11-24 15:15:27 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 684)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 3066)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 0.3ms | Allocations: 3911)
+
+
+Started GET "/users" for ::1 at 2022-11-24 15:15:29 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1100)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3383)
+Completed 200 OK in 23ms (Views: 18.2ms | ActiveRecord: 0.3ms | Allocations: 3674)
+
+
+Started GET "/users/8" for ::1 at 2022-11-24 15:15:31 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2831)
+Completed 200 OK in 25ms (Views: 18.4ms | ActiveRecord: 0.3ms | Allocations: 3579)
+
+
+Started GET "/users" for ::1 at 2022-11-24 15:15:33 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1082)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 3359)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 0.3ms | Allocations: 3658)
+
+
+Started GET "/users/7" for ::1 at 2022-11-24 15:15:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 542)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 2810)
+Completed 200 OK in 22ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 3558)
+
+
+Started DELETE "/users/7" for ::1 at 2022-11-24 15:15:38 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (2.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 19ms (ActiveRecord: 6.7ms | Allocations: 2911)
+
+
+Started GET "/users" for ::1 at 2022-11-24 15:15:38 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 954)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 3333)
+Completed 200 OK in 25ms (Views: 19.5ms | ActiveRecord: 0.3ms | Allocations: 3703)
+
+
+Started GET "/users/8" for ::1 at 2022-11-24 15:15:39 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 572)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2839)
+Completed 200 OK in 23ms (Views: 16.9ms | ActiveRecord: 0.3ms | Allocations: 3587)
+
+
+Started DELETE "/users/8" for ::1 at 2022-11-24 15:15:40 -0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (29.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 47ms (ActiveRecord: 34.5ms | Allocations: 2364)
+
+
+Started GET "/users" for ::1 at 2022-11-24 15:15:40 -0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 3040)
+Completed 200 OK in 26ms (Views: 19.5ms | ActiveRecord: 0.5ms | Allocations: 3330)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 15:15:52 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.1ms | Allocations: 1072)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3604)
+Completed 200 OK in 25ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 4002)
+
+
+Started POST "/users" for ::1 at 2022-11-24 15:15:57 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elsa", "email"=>"e.montinelli@gmail.com"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elsa"], ["email", "e.montinelli@gmail.com"], ["created_at", "2022-11-24 18:15:57.980381"], ["updated_at", "2022-11-24 18:15:57.980381"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 20ms (ActiveRecord: 5.4ms | Allocations: 3405)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:15:58 -0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 612)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2879)
+Completed 200 OK in 24ms (Views: 16.7ms | ActiveRecord: 0.5ms | Allocations: 3628)
+
+
+Started GET "/" for ::1 at 2022-11-24 15:16:01 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 3185)
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 3472)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 15:16:06 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1258)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 3746)
+Completed 200 OK in 48ms (Views: 27.7ms | ActiveRecord: 0.4ms | Allocations: 5812)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 15:16:08 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 7.0ms | Allocations: 2107)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2413)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4800)
+Completed 200 OK in 48ms (Views: 27.8ms | ActiveRecord: 1.4ms | Allocations: 8367)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:16:14 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"a", "text"=>"a", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 11.8ms | Allocations: 1689)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 1784)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 4172)
+Completed 422 Unprocessable Entity in 291ms (Views: 27.3ms | ActiveRecord: 0.5ms | Allocations: 18536)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:16:21 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"a", "text"=>"a", "user_id"=>"3"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 3.2ms | Allocations: 1468)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 3822)
+Completed 422 Unprocessable Entity in 36ms (Views: 21.0ms | ActiveRecord: 0.6ms | Allocations: 6930)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:16:22 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"a", "text"=>"a", "user_id"=>"4"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 3.2ms | Allocations: 1468)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 3822)
+Completed 422 Unprocessable Entity in 30ms (Views: 18.7ms | ActiveRecord: 0.5ms | Allocations: 6848)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:16:24 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"a", "text"=>"a", "user_id"=>"6"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.5ms | Allocations: 1468)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 3822)
+Completed 422 Unprocessable Entity in 88ms (Views: 29.7ms | ActiveRecord: 0.5ms | Allocations: 6864)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:16:26 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"aa", "text"=>"aa", "user_id"=>"6"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.4ms | Allocations: 1468)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3837)
+Completed 422 Unprocessable Entity in 30ms (Views: 18.3ms | ActiveRecord: 0.5ms | Allocations: 6892)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:16:34 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"aa", "text"=>"aa", "user_id"=>"17"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.4ms | Allocations: 1468)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 3830)
+Completed 422 Unprocessable Entity in 31ms (Views: 18.9ms | ActiveRecord: 0.5ms | Allocations: 6871)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:16:34 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"aa", "text"=>"aa", "user_id"=>"17"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 3.4ms | Allocations: 1468)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 3822)
+Completed 422 Unprocessable Entity in 50ms (Views: 19.5ms | ActiveRecord: 0.5ms | Allocations: 6851)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:16:35 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"aa", "text"=>"aa", "user_id"=>"17"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.3ms | Allocations: 1468)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3822)
+Completed 422 Unprocessable Entity in 30ms (Views: 18.5ms | ActiveRecord: 0.5ms | Allocations: 6860)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 15:16:35 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 744)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 3019)
+Completed 200 OK in 24ms (Views: 18.7ms | ActiveRecord: 0.4ms | Allocations: 3309)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 15:16:37 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.0ms | Allocations: 1210)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1297)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 3572)
+Completed 200 OK in 23ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 3865)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:16:45 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"aadaca", "text"=>"cascafas", "user_id"=>"0"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.5ms | Allocations: 1468)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3822)
+Completed 422 Unprocessable Entity in 32ms (Views: 20.1ms | ActiveRecord: 0.5ms | Allocations: 6866)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:17:29 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"aadaca", "text"=>"cascafas", "user_id"=>"0"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.5ms | Allocations: 1468)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3822)
+Completed 422 Unprocessable Entity in 31ms (Views: 19.0ms | ActiveRecord: 0.5ms | Allocations: 6839)
+
+
+Started GET "/" for ::1 at 2022-11-24 15:17:36 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 917)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3192)
+Completed 200 OK in 25ms (Views: 19.3ms | ActiveRecord: 0.3ms | Allocations: 3481)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:17:38 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2837)
+Completed 200 OK in 23ms (Views: 16.5ms | ActiveRecord: 0.4ms | Allocations: 3594)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 15:17:47 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 741)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3016)
+Completed 200 OK in 23ms (Views: 17.8ms | ActiveRecord: 0.4ms | Allocations: 3303)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 15:17:48 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.3ms | Allocations: 1219)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1306)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3581)
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 3873)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:17:52 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"j", "text"=>"j", "user_id"=>"10"}, "commit"=>"Create Micropost"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mMicropost Create (2.0ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "j"], ["text", "j"], ["user_id", 10], ["created_at", "2022-11-24 18:17:52.718982"], ["updated_at", "2022-11-24 18:17:52.718982"]]
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/microposts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/microposts/7
+Completed 302 Found in 24ms (ActiveRecord: 6.5ms | Allocations: 3392)
+
+
+Started GET "/microposts/7" for ::1 at 2022-11-24 15:17:52 -0300
+Processing by MicropostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"7"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:63:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/_micropost.html.erb (Duration: 1.1ms | Allocations: 196)
+  Rendered microposts/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1134)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 3401)
+Completed 200 OK in 31ms (Views: 21.2ms | ActiveRecord: 0.4ms | Allocations: 4869)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 15:17:56 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 881)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 3156)
+Completed 200 OK in 27ms (Views: 21.8ms | ActiveRecord: 0.6ms | Allocations: 3445)
+
+
+Started GET "/" for ::1 at 2022-11-24 15:17:59 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 886)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 3176)
+Completed 200 OK in 29ms (Views: 23.1ms | ActiveRecord: 0.4ms | Allocations: 3463)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:18:01 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 2827)
+Completed 200 OK in 23ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 3575)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = ?[0m  [["user_id", 10]]
+Started GET "/users/10" for ::1 at 2022-11-24 15:22:39 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 1.3ms | Allocations: 254)
+  Rendered users/show.html.erb within layouts/application (Duration: 23.4ms | Allocations: 2099)
+  Rendered layout layouts/application.html.erb (Duration: 255.6ms | Allocations: 38428)
+Completed 200 OK in 452ms (Views: 282.9ms | ActiveRecord: 2.9ms | Allocations: 50518)
+
+
+Started GET "/users/1" for ::1 at 2022-11-24 15:22:45 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+Completed 404 Not Found in 9ms (ActiveRecord: 0.3ms | Allocations: 1037)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:63:in `set_user'
+Started GET "/users" for ::1 at 2022-11-24 15:22:48 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1436)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 3839)
+Completed 200 OK in 27ms (Views: 19.2ms | ActiveRecord: 0.4ms | Allocations: 4264)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:22:50 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 2828)
+Completed 200 OK in 24ms (Views: 17.4ms | ActiveRecord: 0.3ms | Allocations: 3616)
+
+
+Started GET "/users/10/edit" for ::1 at 2022-11-24 15:23:09 -0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 200.2ms | Allocations: 12761)
+  Rendered users/edit.html.erb within layouts/application (Duration: 204.0ms | Allocations: 13120)
+  Rendered layout layouts/application.html.erb (Duration: 217.3ms | Allocations: 15497)
+Completed 200 OK in 228ms (Views: 218.7ms | ActiveRecord: 0.3ms | Allocations: 16342)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:23:36 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 1.1ms | Allocations: 179)
+  Rendered users/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1167)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3800)
+Completed 200 OK in 49ms (Views: 38.4ms | ActiveRecord: 0.3ms | Allocations: 5230)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:24:05 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 211.5ms | Allocations: 12039)
+  Rendered users/show.html.erb within layouts/application (Duration: 219.4ms | Allocations: 13026)
+  Rendered layout layouts/application.html.erb (Duration: 235.0ms | Allocations: 15682)
+Completed 200 OK in 258ms (Views: 246.9ms | ActiveRecord: 0.3ms | Allocations: 17088)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:24:11 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 21.5ms | Allocations: 5935)
+  Rendered users/show.html.erb within layouts/application (Duration: 29.2ms | Allocations: 6553)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 6636)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.3ms | Allocations: 8043)
+
+
+  
+ActionView::Template::Error (undefined method `micropost' for #<User id: 10, name: "Elsa", email: "e.montinelli@gmail.com", created_at: "2022-11-24 18:15:57.980381000 +0000", updated_at: "2022-11-24 18:15:57.980381000 +0000">
+Did you mean?  microposts
+               microposts=):
+    10:   </p>
+    11:   <p>
+    12:     <strong>Micropost:</strong>
+    13:     <%= user.micropost %>
+    14:   </p>
+    15: </div>
+  
+app/views/users/_user.html.erb:13
+app/views/users/show.html.erb:3
+Started GET "/users" for ::1 at 2022-11-24 15:24:28 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1437)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 4112)
+Completed 200 OK in 52ms (Views: 42.8ms | ActiveRecord: 0.5ms | Allocations: 4991)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:24:33 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 1.2ms | Allocations: 227)
+  Rendered users/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1040)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 3307)
+Completed 200 OK in 31ms (Views: 21.7ms | ActiveRecord: 0.4ms | Allocations: 4177)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:24:47 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = ? /* loading for inspect */ LIMIT ?[0m  [["user_id", 10], ["LIMIT", 11]]
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/_user.html.erb (Duration: 226.9ms | Allocations: 19228)
+  Rendered users/show.html.erb within layouts/application (Duration: 231.1ms | Allocations: 19855)
+  Rendered layout layouts/application.html.erb (Duration: 232.4ms | Allocations: 19938)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 2.4ms | Allocations: 21238)
+
+
+  
+ActionView::Template::Error (undefined method `text' for #<ActiveRecord::Associations::CollectionProxy [#<Micropost id: 7, content: "j", text: "j", user_id: 10, created_at: "2022-11-24 18:17:52.718982000 +0000", updated_at: "2022-11-24 18:17:52.718982000 +0000">]>):
+    10:   </p>
+    11:   <p>
+    12:     <strong>Micropost:</strong>
+    13:     <%= user.microposts.text %>
+    14:   </p>
+    15: </div>
+  
+app/views/users/_user.html.erb:13
+app/views/users/show.html.erb:3
+Started GET "/users/10" for ::1 at 2022-11-24 15:24:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = ? /* loading for inspect */ LIMIT ?[0m  [["user_id", 10], ["LIMIT", 11]]
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/_user.html.erb (Duration: 11.5ms | Allocations: 5203)
+  Rendered users/show.html.erb within layouts/application (Duration: 15.7ms | Allocations: 5819)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 5902)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.8ms | Allocations: 7259)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<ActiveRecord::Associations::CollectionProxy [#<Micropost id: 7, content: "j", text: "j", user_id: 10, created_at: "2022-11-24 18:17:52.718982000 +0000", updated_at: "2022-11-24 18:17:52.718982000 +0000">]>
+Did you mean?  connection):
+    10:   </p>
+    11:   <p>
+    12:     <strong>Micropost:</strong>
+    13:     <%= user.microposts.content %>
+    14:   </p>
+    15: </div>
+  
+app/views/users/_user.html.erb:13
+app/views/users/show.html.erb:3
+Started GET "/users/10" for ::1 at 2022-11-24 15:25:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 1.2ms | Allocations: 233)
+  Rendered users/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1236)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 3884)
+Completed 200 OK in 54ms (Views: 40.2ms | ActiveRecord: 0.6ms | Allocations: 5239)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:28:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 49ms (Allocations: 2421)
+
+
+  
+NameError (uninitialized constant User::FILL_IN
+
+validates FILL_IN, presence: true # Replace FILL_IN with the right code.
+          ^^^^^^^):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:63:in `set_user'
+Started GET "/microposts" for ::1 at 2022-11-24 15:28:26 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 1.3ms | Allocations: 213)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 3749)
+  Rendered layout layouts/application.html.erb (Duration: 83.5ms | Allocations: 17990)
+Completed 200 OK in 113ms (Views: 91.9ms | ActiveRecord: 2.4ms | Allocations: 19786)
+
+
+Started GET "/users/10" for ::1 at 2022-11-24 15:30:27 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 9ms (Allocations: 901)
+
+
+  
+SyntaxError (C:/Users/pedro/alpop/app/models/user.rb:3: syntax error, unexpected '\n', expecting =>
+...ce FILL_IN with the right code.
+...                               ^
+C:/Users/pedro/alpop/app/models/user.rb:4: syntax error, unexpected '\n', expecting =>
+...ce FILL_IN with the right code.
+...                               ^
+):
+  
+app/models/user.rb:3: syntax error, unexpected '\n', expecting =>
+app/models/user.rb:4: syntax error, unexpected '\n', expecting =>
+app/models/user.rb:3: syntax error, unexpected '\n', expecting =>
+app/models/user.rb:4: syntax error, unexpected '\n', expecting =>
+app/models/user.rb:3: syntax error, unexpected '\n', expecting =>
+app/models/user.rb:4: syntax error, unexpected '\n', expecting =>
+app/controllers/users_controller.rb:63:in `set_user'
+Started GET "/users/10" for ::1 at 2022-11-24 15:31:08 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 36ms (Allocations: 6120)
+
+
+  
+NameError (undefined local variable or method `ttrue' for User:Class
+Did you mean?  true):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:63:in `set_user'
+Started GET "/users/10" for ::1 at 2022-11-24 15:31:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 7.2ms | Allocations: 1628)
+  Rendered users/show.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2432)
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 16636)
+Completed 200 OK in 99ms (Views: 68.4ms | ActiveRecord: 3.6ms | Allocations: 21678)
+
+
+Started GET "/users" for ::1 at 2022-11-24 15:31:25 -0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1393)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3670)
+Completed 200 OK in 27ms (Views: 19.8ms | ActiveRecord: 0.4ms | Allocations: 4100)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 15:31:27 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.5ms | Allocations: 1453)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1733)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 4008)
+Completed 200 OK in 29ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 4385)
+
+
+Started POST "/users" for ::1 at 2022-11-24 15:31:27 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>""}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.3ms | Allocations: 4859)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4954)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 7323)
+Completed 422 Unprocessable Entity in 33ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 9011)
+
+
+Started GET "/users/new" for ::1 at 2022-11-24 15:32:26 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.9ms | Allocations: 1267)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1380)
+  Rendered layout layouts/application.html.erb (Duration: 60.2ms | Allocations: 15596)
+Completed 200 OK in 95ms (Views: 63.0ms | ActiveRecord: 2.6ms | Allocations: 19292)
+
+
+Started POST "/users" for ::1 at 2022-11-24 15:32:33 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>""}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.3ms | Allocations: 2768)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2855)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 5132)
+Completed 422 Unprocessable Entity in 33ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 6459)
+
+
+Started GET "/microposts" for ::1 at 2022-11-24 15:32:48 -0300
+Processing by MicropostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.7ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:6
+  Rendered microposts/_micropost.html.erb (Duration: 0.1ms | Allocations: 46)
+  Rendered microposts/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 2992)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 5484)
+Completed 200 OK in 45ms (Views: 29.8ms | ActiveRecord: 3.3ms | Allocations: 7090)
+
+
+Started GET "/microposts/new" for ::1 at 2022-11-24 15:32:50 -0300
+Processing by MicropostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 7.3ms | Allocations: 2074)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2401)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 4787)
+Completed 200 OK in 37ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 5212)
+
+
+Started POST "/microposts" for ::1 at 2022-11-24 15:32:52 -0300
+Processing by MicropostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"", "text"=>"", "user_id"=>""}, "commit"=>"Create Micropost"}
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 7.2ms | Allocations: 2577)
+  Rendered microposts/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2668)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4936)
+Completed 422 Unprocessable Entity in 29ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 6796)
+
+
