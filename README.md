@@ -1,24 +1,9 @@
-# README
+# Exercicio_Alpop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Exercício de processo seletivo de estágio da Alpop, nele será reproduzido o Rails Tutorial que pode ser acessado aqui: https://archive.org/details/6th-edition-michael-hartl-the-ruby-on-rails-tutorial-2020/mode/2up
 
-Things you may want to cover:
+O exercicío será realizar todos os processos até o capítulo 6.
 
-* Ruby version
+## Capítulo 1
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Nesse capítulo é realizado toda a instalação e configuração do Rails. Também é feito um "hello, world", e 3 exercicíos que são uma variação dele.
