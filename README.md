@@ -67,3 +67,7 @@ Resposta: ```class ApplicationController < ActionController::Base```
 * Is there an analogous file containing a line where ApplicationRecord inherits from ActiveRecord::Base? Hint: It would probably be a file called something like application_record.rb in the app/models directory.
 
 Resposta: Sim, existe
+
+## Capítulo 3
+
+Nesse capítulo trabalhos com as páginas about, help e home da pasta static_pages
