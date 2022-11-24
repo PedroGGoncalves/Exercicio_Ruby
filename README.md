@@ -22,3 +22,5 @@ Resposta: Ele criou o usuário sem endereço de email.
 Resposta: Ele criou o usuário com endereço de email inválido.
 4.  Destroy each of the users created in the previous exercises. Does Rails display a message by default when a user is destroyed?
 Resposta: Sim, ele exibe a mensagem: User was successfully destroyed.
+1. By referring to Figure 2.11, write out the analogous steps for visiting the URL /users/1/edit.
+Resposta: ```<td><%= link_to 'Edit', edit_user_path(user) %></td>```
